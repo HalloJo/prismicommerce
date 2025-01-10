@@ -15,8 +15,8 @@ export async function createCheckoutLink(price: string) {
         quantity: 1,
       },
     ],
-    success_url: `/thank-you`,
-    cancel_url: `/`,
+    success_url: `http://localhost:3000/thank-you`,
+    cancel_url: `http://localhost:3000/`,
   };
 
   const checkoutSession: Stripe.Checkout.Session =
